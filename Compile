@@ -1,0 +1,4 @@
+g++ -g -Wall fruit.cpp -lfltk -c
+g++ -g -Wall segment.cpp -lfltk -c
+g++ -g -Wall snake.cpp -lfltk -c
+g++ -g -Wall main.cpp snake.o fruit.o segment.o -o snake `fltk-config --ldflags`
